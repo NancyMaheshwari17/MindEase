@@ -1,0 +1,596 @@
+*{
+    margin:0;
+    font-family: Arial;
+}
+
+/* NAVBAR */
+.navbar{
+    height: 90px;
+    background: #906dbb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 60px;
+}
+
+.nav-logo{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.site-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    font-family: Arial; /* or your preferred font */
+}
+
+.nav-logo:hover {
+    transform: scale(1.1);
+}
+
+.nav-logo .fa-leaf{
+    font-size: 70px;
+    color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+
+    /* These 5 classes had the SAME styles → merged into one */
+    font-size: 20px;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+/* HERO SECTION */
+.hero-section{
+    background: linear-gradient(135deg, #E6FFFA, #b297de);
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+}
+
+.hero-section img {
+    transition: transform 0.3s ease;
+}
+
+.hero-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+}
+
+.photo{
+    height: 500px;
+    width : 800px;
+    border-radius: 20px;
+    border: 5px solid #333;
+}
+
+.hero-text {
+    max-width: 400px;
+}
+
+.hero-text h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #4b0082;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 23px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.about-section {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 80px;
+   padding: 100px 80px;
+}
+
+.about-content {
+   max-width: 600px;
+}
+
+.about-content h2 {
+   color: #5a2d91;
+   font-size: 45px;
+   margin-bottom: 20px;
+}
+
+.about-content p {
+   color: #333;
+   font-size: 20px;
+   line-height: 1.8;
+   margin-bottom: 20px;
+}
+
+.about-content .btn {
+   background-color: #906dbb;
+   color: white;
+   border: none;
+   padding: 12px 25px;
+   font-size: 18px;
+   border-radius: 25px;
+   cursor: pointer;
+   transition: background 0.3s ease;
+}
+
+.about-content .btn:hover {
+   background-color: #6a0dad;
+}
+
+.about-image img {
+   width: 400px;
+   height: auto;
+   border-radius: 20px;
+   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.footer{
+    background: #2c1e3a;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-section{
+    flex: 1 1 280px;
+}
+
+.footer-section h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer-section p{
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-section ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section ul li{
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.footer-section ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px){
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ------------------ QUOTES PAGE SECTION ------------------ */
+
+.quote-body{
+  background: linear-gradient(135deg, #E6FFFA, #b297de);
+}
+
+.quotes-page{
+  max-width: 1250px;
+  margin: 30px auto;
+  padding: 14px;
+}
+
+/* header */
+.quotes-header h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  color: #4b0082;
+  text-align: center;
+  margin-bottom: 6px;
+}
+.quotes-header .sub{
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+/* each emotion block */
+.emotion{
+  border: 4px solid #6a0dad;
+  margin: 30px 0;
+  padding: 22px;
+  background: #cab4ec;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+}
+
+.emotion-title{
+  font-size: 34px;
+  color: #5a2d91;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* grid of subsections inside emotion */
+.inner-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.sub p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* a single subsection card */
+.subsection{
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,255,0.98));
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+  min-height: 190px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+/* image at top of subsection */
+.subsection img{
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* subsection title */
+.subsection h3{
+  font-size: 20px;
+  color: #4b0082;
+  margin: 4px 0 6px;
+  font-weight: 700;
+}
+
+/* quotes inside subsection */
+.subsection .quote{
+  font-size: 18px;
+  line-height: 1.6;
+  color: #2f2f2f;
+  font-style: italic;
+  margin: 4px 0;
+}
+
+/* make the author slightly distinct (kept inline with quote style) */
+.subsection .quote + .quote{
+  margin-top: 6px;
+}
+
+/* hover behaviour */
+.subsection:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0,0,0,0.09);
+}
+
+/* responsive adjustments */
+@media (max-width: 920px){
+  .quotes-header h1{ font-size: 40px; }
+  .emotion-title{ font-size: 28px; }
+  .subsection img{ height: 120px; }
+}
+
+@media (max-width: 520px){
+  .quotes-header h1{ font-size: 28px; }
+  .quotes-header .sub{ font-size: 16px; }
+  .subsection img{ height: 100px; }
+  .subsection .quote{ font-size: 16px; }
+  .subsection h3{ font-size: 18px; }
+}
+
+/* ------------------ TIP PAGE SECTION ------------------ */
+
+.tips-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 52px 36px;
+    background: linear-gradient(135deg, #f4e9ff, #d8b7ff);
+    border-radius: 12px;
+    margin: 28px;
+}
+
+.tips-header{ text-align: center; margin-bottom: 6px; }
+
+.tips-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* Tip card (keeps visual style similar to quote-cards) */
+.tip-card{
+    background: rgba(255,255,255,0.94);
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Icon circle */
+.tip-icon{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(145, 70, 200, 0.12);
+    color: #5a2d91;
+    font-size: 18px;
+}
+
+/* Titles and bodies */
+.tip-title{ color: #4b0082; font-weight: 700; margin: 2px 0; font-size: 18px; }
+.tip-body{ color: #2f2f2f; font-size: 15px; line-height: 1.6; }
+
+/* Responsive tweaks */
+@media (max-width: 720px){
+    .tips-section{ padding: 32px 18px; margin: 18px; }
+    .tip-card{ min-height: 120px; }
+}
+
+/* ------------------ CONTACT PAGE SECTION ------------------ */
+
+.contact-section{
+    padding: 48px 28px;
+    margin: 28px;
+    background: linear-gradient(135deg, #f4e9ff, #d8b7ff);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-wrapper{
+    width: 100%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.contact-info{ padding: 12px 6px; }
+
+.info-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.info-card{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: rgba(255,255,255,0.94);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+}
+
+.info-icon{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: rgba(145, 70, 200, 0.12);
+    color: #5a2d91;
+    font-size: 18px;
+}
+
+.info-title{ font-weight:700; color:#4b0082; margin-bottom:2px; }
+.info-body a{ color: #333; text-decoration: none; }
+
+.contact-form{
+    background: rgba(255,255,255,0.96);
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label{
+    font-size: 14px;
+    color: #333;
+    margin-top: 6px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.12);
+    font-size: 15px;
+    outline: none;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    box-shadow: 0 6px 18px rgba(106,13,173,0.08);
+    border-color: rgba(106,13,173,0.25);
+}
+
+.form-actions{
+    display:flex;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.btn-ghost{
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.08);
+    color: #4b0082;
+}
+
+.form-note{
+    font-size: 13px;
+    color: #555;
+    margin-top: 8px;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 900px){
+    .contact-wrapper{ grid-template-columns: 1fr; }
+    .contact-section{ padding: 32px 16px; margin: 18px; }
+}
+
+/* ------------------ YOGA PAGE SECTION ------------------ */
+
+.yoga-section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+    padding:52px 36px;
+    background: linear-gradient(135deg, #f4e9ff, #d8b7ff);
+    border-radius:12px;
+    margin:28px;
+}
+
+.yoga-header{
+    text-align:center;
+    max-width:650px;
+}
+
+.yoga-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap:18px;
+    width:100%;
+    max-width:1100px;
+}
+
+.yoga-card{
+    background: rgba(255,255,255,0.95);
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.yoga-icon{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: rgba(145, 70, 200, 0.12);
+    color:#5a2d91;
+    font-size:18px;
+}
+
+.yoga-title{
+    font-size:18px;
+    font-weight:700;
+    color:#4b0082;
+}
+
+.yoga-body{
+    font-size:14px;
+    color:#333;
+}
+
+.yoga-list{
+    margin-left:18px;
+    margin-top:4px;
+    font-size:14px;
+    line-height:1.6;
+    color:#333;
+}
+
+.yoga-note{
+    margin-top:10px;
+    font-size:14px;
+    color:#555;
+    text-align:center;
+}
+
+/* Responsive */
+@media (max-width: 720px){
+    .yoga-section{
+        padding:32px 18px;
+        margin:18px;
+    }
+}
+
+/* ------------------ YOGA IMAGES ------------------ */
+
+.yoga-img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}

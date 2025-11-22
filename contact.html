@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MindEase — Contact</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="index_style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+
+      <!-- Website Logo + Name (CLICKABLE) -->
+      <a href="index.html" class="nav-logo">
+         <i class="fa-solid fa-leaf"></i>
+         <p class="site-name">MindEase</p>
+      </a>
+
+      <a href="index.html" class="home">
+        <i class="fa-solid fa-house-user"></i>
+        <p>Home</p>
+      </a>
+
+      <a href="quote.html" class="quotes">
+        <i class="fa-solid fa-comment"></i>
+        <p>Quotes</p>
+      </a>
+
+      <a href="tip.html" class="tips">
+        <i class="fa-solid fa-envelope"></i>
+        <p>Tips</p>
+      </a>
+
+      <a href="yoga.html" class="yoga">
+        <i class="fa-brands fa-yoast"></i>
+        <p>Yoga</p>
+      </a>
+
+      <a href="contact.html" class="contact" aria-current="page">
+        <i class="fa-solid fa-phone-volume"></i>
+        <p>Contact</p>
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h1 id="contact-heading" class="page-title">Get in Touch</h1>
+          <p class="page-sub">Questions, partnerships, or feedback — we’d love to hear from you.</p>
+
+          <div class="info-cards">
+            <div class="info-card">
+              <i class="fa-solid fa-envelope info-icon"></i>
+              <div>
+                <div class="info-title">Email</div>
+                <div class="info-body"><a href="mailto:hello@mindease.example">hello@mindease.example</a></div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <i class="fa-solid fa-phone info-icon"></i>
+              <div>
+                <div class="info-title">Phone</div>
+                <div class="info-body"><a href="tel:+919876543210">+91 98765 43210</a></div>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <i class="fa-solid fa-location-dot info-icon"></i>
+              <div>
+                <div class="info-title">Location</div>
+                <div class="info-body">Delhi, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="mailto:hello@mindease.example" method="post" enctype="text/plain">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="Jane Doe" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Quick question" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send</button>
+            <button type="reset" class="btn btn-ghost">Reset</button>
+          </div>
+
+          <div class="form-note">Or email us directly at <a href="mailto:hello@mindease.example">hello@mindease.example</a></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
