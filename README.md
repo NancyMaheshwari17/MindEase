@@ -8,8 +8,6 @@ In today’s fast-paced world, stress and overthinking are common problems. Mind
 
 This project demonstrates front-end web development using **HTML and CSS** while focusing on a meaningful real-world theme — mental well-being.
 
----
-
 ## Features
 
 * 🌿 Clean and calming user interface
@@ -18,8 +16,6 @@ This project demonstrates front-end web development using **HTML and CSS** while
 * 🧘 Yoga section for relaxation and mindfulness
 * 📞 Contact section
 * 📱 Responsive layout for better viewing
-
----
 
 ## Website Sections
 
@@ -31,15 +27,11 @@ The website contains the following pages:
 * **Yoga** – Simple yoga practices for relaxation
 * **Contact** – A section for connecting with the website
 
----
-
 ## Technologies Used
 
 * HTML5
 * CSS3
 * Font Awesome Icons
-
----
 
 ## Project Structure
 
@@ -52,8 +44,6 @@ mind-ease-website
 ├── contact.html
 ├── index_style.css
 └── images
-
----
 
 ## How to Run the Project
 
